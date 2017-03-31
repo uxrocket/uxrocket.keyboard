@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+    <title>UX Rocket Keyboard Sample</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width">
+
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="../bower_components/uxrocket.factory/dist/uxrocket.factory.js"></script>
+    <script src="../lib/uxrocket.keyboard.js"></script>
+    <script>
+        $(function() {
+
+            var t0 = performance.now();
+
+            $("#alphanumeric").Keyboard({
+                lang : 'tr'
+            });
+
+            $("#alphanumeric-eng").Keyboard({
+                format:'eng',
+                lang : 'eng'
+            });
+
+            $("#numeric").Keyboard({
+
+                type : "numeric",
+                submit : function () {
+                    console.log('form submited ');
+                }
+
+            });
+            var t1 = performance.now();
+            var s1 = (t1 - t0).toFixed(4);
+            console.log('Took', s1, 'milliseconds to load');
+        });
+    </script>
+    <link rel="stylesheet" href="../dist/uxrocket.keyboard.css" />
+</head>
+
+<body>
+<div class="content">
+   <div class="example">
+       <input type="text" id="alphanumeric" placeholder="Alfabetik TR Q Klavye" />
+   </div>
+    <div class="example">
+       <input type="text" id="alphanumeric-eng" placeholder="Alfabetik ENG Q Kalvye " />
+   </div>
+    <div class="example">
+        <input type="text" id="numeric"  placeholder="nümeric Klavye "/>
+   </div>
+</div>
+</body>
+</html>

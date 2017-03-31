@@ -1,0 +1,11 @@
+{
+  "name": "Keyboard",
+  "registry": "uxrocket.keyboard",
+  "version": "0.1.0",
+  "paths": {
+    "lib": "lib/",
+    "dist": "dist/",
+    "test": "test/",
+    "examples": "examples/"
+  }
+}
