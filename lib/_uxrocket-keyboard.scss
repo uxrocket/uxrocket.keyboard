@@ -1,0 +1,173 @@
+/**
+ * UX Rocket
+ * jQuery based keyboard plugin
+ * @author Emrah Kumru
+ */
+
+$color-white : #FFF;
+$color-black : #000;
+
+.content {
+  margin: 0 auto;
+  max-width: 1920px;
+  width: 100%;
+}
+.example {
+
+  margin: 10px;
+  display: inline-block;
+
+  input {
+    width: 200px;
+    height: 20px;
+  }
+
+}
+.uxr-plugin-wrap {
+
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding-bottom: 5px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: rgba(9, 35, 61, 0.85);
+  z-index: 999;
+
+  &.hidden{
+
+    display: none;
+
+  }
+
+  .line {
+      display: block;
+    }
+
+  .alphanumeric {
+
+      position: relative;
+      margin: 0 auto;
+      text-align: center;
+
+    &.trq {
+      width: 815px;
+    }
+
+    &.eng {
+      width: 700px;
+    }
+
+    .button {
+
+          width: 50px;
+          height: 60px;
+          margin: 5px;
+          border-radius: 10px;
+          background: $color-white;
+          color: $color-black;
+          line-height: 60px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size:23px;
+
+          &-space {
+            width: 430px;
+          }
+
+          &-enter {
+            right: -35px;
+            top: 70px;
+            height: 130px;
+            line-height: 126px;
+            position: absolute;
+          }
+          &-del {
+            right: -35px;
+            width: 130px;
+            position: absolute;
+            bottom: 70px;
+          }
+
+          &-capslock {
+            position: absolute;
+            left: -14px;
+            bottom: 70px;
+            width: 119px;
+          }
+
+          &-shift {
+
+            position: absolute;
+            left: -14px;
+            bottom: 70px;
+            width: 119px;
+
+          }
+
+          &:active {
+            box-shadow: inset 0 0 4px 4px rgba(0, 0, 0, 0.5);
+            -moz-box-shadow: inset 0 0 4px 4px rgba(0, 0, 0, 0.5);
+            -webkit-box-shadow: inset 0 0 4px 4px rgba(0, 0, 0, 0.5);
+          }
+
+        }
+
+  }
+
+  .numeric {
+
+    position: relative;
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+
+    .button {
+
+      width: 70px;
+      height: 80px;
+      margin: 5px 10px;
+      border-radius: 20px;
+      background: $color-white;
+      color: $color-black;
+      line-height: 80px;
+      text-align: center;
+      text-decoration: none;
+      font-size: 35px;
+      display: inline-block;
+
+      &-zero {
+        width: 170px;
+      }
+
+      &-enter {
+        width: 270px;
+
+      }
+
+      &:active {
+        box-shadow: inset 0 0 4px 4px rgba(0, 0, 0, 0.5);
+        -moz-box-shadow: inset 0 0 4px 4px rgba(0, 0, 0, 0.5);
+        -webkit-box-shadow: inset 0 0 4px 4px rgba(0, 0, 0, 0.5);
+      }
+
+    }
+
+  }
+
+  .close {
+
+    position: absolute;
+    right: 20px;
+    z-index: 9999;
+
+      a {
+        color: $color-white;
+        text-decoration: none;
+        font-size: 30px;
+      }
+
+  }
+
+}

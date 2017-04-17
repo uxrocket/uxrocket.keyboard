@@ -1,0 +1,30 @@
+{
+  "name": "uxrocket.keyboard",
+  "version": "0.1.0",
+  "homepage": "https://github.com/uxrocket/uxrocket.keyboard",
+  "authors": [
+    "Emrah Kumru <emrahkumru@live.com>"
+  ],
+  "description": "jQuery based Keyboard plugin",
+  "main": "lib/uxrocket.keyboard.js",
+  "dependencies": {
+    "jquery": "latest"
+  },
+  "keywords": [
+    "jQuery",
+    "javascript",
+    "select",
+    "uxrocket"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "uxrocket.factory": "1.0.0-alpha3"
+  }
+}
